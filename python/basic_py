@@ -1,0 +1,234 @@
+#  # 1 quesion
+# l1=[1,32,4,5,5,6,7]
+# l2=[11,2,3,4,5,6]
+ 
+# l1.append("aman")
+# l2.extend("aman")
+
+# l1.append(l2)
+# l2.extend(l1)
+# print(l1)
+# print(l2)
+
+
+# l1=[1,2,"ae","e"]
+# l2=[4,5,6,7]
+
+#print(type(l1))
+# l1.append(l2)
+# l1.extend(l2)
+# print(l1)
+# print(l2)
+
+# # 2 questions
+# d={
+#     "web" : ["html", "css", "jawascript"],
+#     ("ml", "ai", "dl") : "datascience",
+#     "network" : ("op","linux"),
+#     "count" : (1,2,3)
+# }
+# print(d)
+# print(d.items())
+# print(d.keys())
+# print(d.values())
+
+# print(d["web"])
+# print(d[("ml", "ai", "dl")])
+# print(d["network"])
+# # print(d[("op","linux")])
+# # print(d[(1,2,3)])
+
+
+# d1={
+#     1:"rohan",
+#     2:"aman"
+# }
+# print(d1[2],d1.get(1))
+
+
+# def fibo(n):
+#     a,b=0,1
+
+#     # while n>b:
+#     #     a,b=b,a+b
+#     #     print(a) 
+
+#     for i in range(n):
+#         a,b = b, a+b
+#         if i==5:
+#             # continue
+#             # break  
+#         print("i  =>  ",i,"      a  =>  ",a)
+           
+# fibo(9)
+
+
+# tuple1 = (1,2,3)
+# tuple2 = (2,3,4)
+# d1 = {tuple1: 'First', tuple2: 'Second'}
+# # print(d1)
+# d1[(4,3,4)]=33
+# # d1.pop()
+# print(len(d1))
+
+
+# In Case Of open():
+# file = open("hellooo.txt", "w")
+# file.write("Hello, ")
+# file.close()
+
+
+
+# a=[1,2,3,4,5,4,3,5,4,5,5]
+# for i in range(len(a)):
+#     for j in range(i+1,len(a)):
+#          if a[i]==a[j]:
+#             print(a[i],"dublicate")
+#             break
+
+# palindorome while loop
+# def palindrome(s):
+#     n=len(s)
+#     first=0
+#     last=n-1
+#     while last>=first:
+#         if s[first]==s[last]:
+#             first+=1
+#             last-=1
+#         else:
+#             return False
+#     return True
+# print(palindrome("12321"))
+
+
+# def palindrome(v): #1345
+#     quention=v
+#     reverse=0
+#     while(quention>0):
+#         remindre = quention%10   #5 / 4
+#         reverse = reverse * 10 + remindre                   #1. 0*10+5=5 / 2. 5*10+4=54
+#         quention = quention // 10  #1345//10=134 ! 134//10=1
+#         print(v, "    ",remindre, reverse, quention)
+#     if v==reverse:
+#         print ("palindrome")
+#     else:
+#         print ("not palindrome")
+
+# palindrome(123213)
+
+# def fibonacci(n):
+#     if n<=1:
+#         return n
+#     else:
+#         return (fibonacci(n-1) + fibonacci(n-2))
+# n = 10
+# if n<=0:
+#     print("invalid")
+# else:
+#     for i in range(n):
+        # print(fibonacci(i))
+
+# number comppresion
+# def commpres(s):
+#     n=len(s)
+#     new_s=""
+#     count=1
+#     for i in range(n-1):
+#         if s[i]==s[i+1]:
+#             count+=1
+#             # print(new_s, s[i])
+#         else:
+#             new_s = new_s + s[i] + str(count)
+#             count=1
+#     new_s = new_s + s[n-1] + str(count)
+#     print(new_s)
+# commpres("aaabbbbcc")
+
+
+# def commpres(s):
+#     n=len(s)
+#     i=0
+#     count=1
+#     new_s=""
+#     while(n-1>i):
+#         if s[i]==s[i+1]:
+#             count+=1
+#         else:
+#             new_s = new_s + s[i] + str(count)
+#             count=1
+#         i+=1
+#     new_s = new_s + s[n-1] + str(count)
+#     print(new_s)
+# commpres("aaabbbbcc")
+
+
+# fizz buzz
+
+# def fizzbuzz(v):
+#     for i in range(v):
+        # match i:
+        #     case i%3==0 and i%5==0:
+        #         print(i,"fizzbuzz")
+        #         break
+        #     case i%3==0:
+        #         print(i,"fizz")
+        #         break
+        #     case i%5==0:
+        #         print(i,"buzz")
+        #         break
+        # if i%3==0 and i%5==0:
+        #     print(i,"fizzbuzz")
+        # elif i%3==0:
+        #         print(i,"fizz")
+        # elif i%5==0:
+        #         print(i,"buzz")
+        # else:
+        #         print(i)
+# fizzbuzz(10)
+
+
+
+# def fibo(n):
+#     d={
+#         3 : "fizz",
+#         5 : "buzz"
+#     }
+    
+#     for i in range(1,n):
+        
+#         if i%3==0 & i%5==0:
+#                 print(i,d[3]+d[5])
+#         elif i%3==0:
+#                 print(i,d[3])
+#         elif i%5==5:
+#                 print(i,d[5])
+#         else:
+#                 print(i)
+
+# fibo(20)
+
+# d1={
+#         (1,3,4) : "aman",
+#         ("a","b","c"): [1,2,3]
+# }
+# # print(d1.items())
+# # print(d1.keys())
+# # print(d1.values())
+# for k ,v in d1.items():
+#         print(k)
+#         print(v)
+
+# def fizzbuzz(n):
+        # d2={
+        #         3:"fizz",
+        #         5:"buzz"
+        # }
+        # for i in range(n):
+        #         result= ""
+        #         for k,v in d2.items():
+        #                 if i%k==0:
+        #                         result=result + v
+        #                         print(i,result)
+        #                         # result=v
+        #                         print(i)
+# fizzbuzz(20)
